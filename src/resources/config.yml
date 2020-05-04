@@ -1,0 +1,7 @@
+prefix: "§6[LoginRewards]§f "
+sameDayMessage: "You can claim next reward tomorrow!"
+days:
+  1d:
+    message: "You get first day reward!"
+    commands:
+      - "givemoney %player_name% 500"

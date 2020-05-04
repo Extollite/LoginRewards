@@ -1,0 +1,26 @@
+name: LoginRewards
+main: pl.extollite.loginrewards.LoginRewards
+version: "${pom.version}"
+api: ["1.0.9"]
+load: POSTWORLD
+authors: ["Extollite"]
+description: Nukkit login rewards plugin
+prefix: "LoginRewards"
+
+commands:
+  login:
+    description: login rewards command
+    usage: /login
+    permission: loginrewards.command
+  reset_login:
+    description: login rewards reset command
+    usage: /reset_login
+    permission: loginrewardsreset.command
+
+permissions:
+  loginrewards.command:
+    description: "login command permission"
+    default: true
+  loginrewardsreset.command:
+    description: "login reset command permission"
+    default: op
